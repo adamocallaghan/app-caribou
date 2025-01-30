@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ConnectButton } from "thirdweb/react";
 import thirdwebIcon from "@public/thirdweb.svg";
 import { client } from "./client";
+import { scrollSepoliaTestnet, scroll } from "thirdweb/chains";
 
 export default function Home() {
   return (
@@ -14,9 +15,10 @@ export default function Home() {
         <div className="flex justify-center mb-20">
           <ConnectButton
             client={client}
+            chain={scroll}
             appMetadata={{
-              name: "Example App",
-              url: "https://example.com",
+              name: "Caribou",
+              url: "https://caribou.xyz",
             }}
           />
         </div>
