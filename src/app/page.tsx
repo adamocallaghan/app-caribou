@@ -15,7 +15,7 @@ export default function Home() {
         <div className="flex justify-center mb-20">
           <ConnectButton
             client={client}
-            chain={scroll}
+            chain={scrollSepoliaTestnet}
             appMetadata={{
               name: "Caribou",
               url: "https://caribou.xyz",
